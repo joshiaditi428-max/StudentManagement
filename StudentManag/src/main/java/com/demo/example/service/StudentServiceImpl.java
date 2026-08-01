@@ -28,8 +28,11 @@ public class StudentServiceImpl implements StudentService{
 	}
 
 	@Override
-	public void getStudent(int id) {
+	public Student getStudent(int id) {
 		// TODO Auto-generated method stub
+		
+		Student s=repo.findById(id).get();
+		return s;
 		
 	}
 

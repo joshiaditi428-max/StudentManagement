@@ -1,6 +1,8 @@
 package com.demo.example.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,6 +25,17 @@ public class StudentController {
 		
 		
  		
+	}
+	
+	@GetMapping("getstudent/{id}")
+	Student getstudent(@PathVariable int id) {
+		
+		Student s=ss.getStudent(id);
+		
+		return s;
+		
+		
+		
 	}
 
 }
