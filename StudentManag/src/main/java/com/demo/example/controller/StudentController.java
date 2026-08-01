@@ -15,7 +15,7 @@ public class StudentController {
 	StudentService ss;
 	
 	
-	@PostMapping("student/stdDetail")
+	@PostMapping("stdDetail")
 	public String StdDetail(@RequestBody Student s) {
 		
 		ss.saveStudent(s);
