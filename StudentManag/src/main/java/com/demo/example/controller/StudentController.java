@@ -14,8 +14,8 @@ public class StudentController {
 	@Autowired
 	StudentService ss;
 	
-	
-	@PostMapping("student/stdDetail")
+//	Story-1
+	@PostMapping("Student/student/stdDetail")
 	public String StdDetail(@RequestBody Student s) {
 		
 		ss.saveStudent(s);
