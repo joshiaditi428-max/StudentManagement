@@ -16,7 +16,7 @@ public class StudentController {
 	@Autowired
 	StudentService ss;
 	
-	
+//	Story-01
 	@PostMapping("student/stdDetail")
 	public String StdDetail(@RequestBody Student s) {
 		
