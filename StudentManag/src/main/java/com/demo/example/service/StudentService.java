@@ -8,6 +8,6 @@ public interface StudentService {
 	
 	void deleteStudent(int id);
 	
-	void getStudent(int id);
+	Student getStudent(int id);
 
 }
