@@ -25,7 +25,7 @@ public class StudentController {
 		return "saved";
 		
 		
-		
+ 		
 	}
 
 }
