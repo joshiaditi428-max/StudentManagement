@@ -11,6 +11,7 @@ public class Student {
 	private String name;
 	private int rollno;
 	private String address;
+	private int mobNo
 	
 	
 	public int getId() {
